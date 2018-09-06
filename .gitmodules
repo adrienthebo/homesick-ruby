@@ -1,9 +1,0 @@
-[submodule "home/.rbenv/plugins/rbenv-run"]
-	path = home/.rbenv/plugins/rbenv-run
-	url = git://github.com/adrienthebo/rbenv-run
-[submodule "home/.rbenv/plugins/rbenv-all"]
-	path = home/.rbenv/plugins/rbenv-all
-	url = git://github.com/adrienthebo/rbenv-all
-[submodule "home/.rbenv/plugins/rbenv-around-install"]
-	path = home/.rbenv/plugins/rbenv-around-install
-	url = https://github.com/toy/rbenv-around-install
