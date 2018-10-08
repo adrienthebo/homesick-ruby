@@ -1,19 +1,26 @@
 ---
+
+# Since we're not using VT220s we can allow a slightly longer line length
 Metrics/LineLength:
   Enabled: true
   Max: 119
 
+# Any Ruby DSL defined by closures will cause this metric to fail
 Metrics/BlockLength:
   Enabled: false
 
+# Pedantic/noisy
 Style/StringLiterals:
   Enabled: false
 
+# `unless` is overly clever; negatived if expressions are easier to reason about.
 Style/NegatedIf:
   Enabled: false
 
+# NilChecks are better than blind boolean expressions; `false` is valid in many contexts.
 NilCheck:
   Enabled: false
 
+# Overly noisy, no value provided
 Style/NumericPredicate:
   Enabled: false
