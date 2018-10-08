@@ -11,3 +11,9 @@ Style/StringLiterals:
 
 Style/NegatedIf:
   Enabled: false
+
+NilCheck:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
