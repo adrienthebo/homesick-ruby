@@ -24,3 +24,7 @@ NilCheck:
 # Overly noisy, no value provided
 Style/NumericPredicate:
   Enabled: false
+
+# Overly pedantic
+Bundler/OrderedGems:
+  Enabled: false
