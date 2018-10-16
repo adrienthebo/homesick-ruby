@@ -28,3 +28,7 @@ Style/NumericPredicate:
 # Overly pedantic
 Bundler/OrderedGems:
   Enabled: false
+
+# Overly noisy
+Style/FrozenStringLiteralComment:
+  Enabled: false
