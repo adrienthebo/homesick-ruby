@@ -1,9 +1,21 @@
 ---
 
+AllCops:
+  TargetRubyVersion: 2.5
+
 # Since we're not using VT220s we can allow a slightly longer line length
 Metrics/LineLength:
   Enabled: true
   Max: 119
+
+# You're fucking shitting me.
+Metrics/MethodLength:
+  Enabled: true
+  Max: 50
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 35
 
 # Any Ruby DSL defined by closures will cause this metric to fail
 Metrics/BlockLength:
@@ -18,7 +30,7 @@ Style/NegatedIf:
   Enabled: false
 
 # NilChecks are better than blind boolean expressions; `false` is valid in many contexts.
-NilCheck:
+Style/NilCheck:
   Enabled: false
 
 # Overly noisy, no value provided
@@ -31,4 +43,33 @@ Bundler/OrderedGems:
 
 # Overly noisy
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+# conflicts with r10k
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# #inject() 4 lyfe
+Style/EachWithObject:
   Enabled: false
